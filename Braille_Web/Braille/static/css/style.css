@@ -1,0 +1,25 @@
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_text {
+    font-weight: bold;
+    font-size: 300%;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgba(20, 134, 196, 0.59);
+}
+
+fieldset {
+    color: whitesmoke;
+    background-color: rgba(123, 24, 203, 0.6);
+    margin: 0 auto;
+    width: 75%;
+}
+
+.trans {
+    width: 90%;
+    background-color: rgba(24, 203, 188, 0.7);
+}

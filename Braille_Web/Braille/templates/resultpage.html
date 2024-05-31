@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>점자 이미지 번역</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    </head>
+    <body>
+        <p class="main_text">점자 이미지 번역기</p>
+        <fieldset>
+            <legend>번역 결과</legend>
+            <center>
+                <img src="{{upload_file}}" alt="braille_image" width="80%" />
+                <br /><br />
+                <fieldset class="trans">
+                    <legend>번역문</legend>
+                    <h2>{{sentence}}</h2>
+                </fieldset>
+            </center>
+        </fieldset>
+    </body>
+</html>

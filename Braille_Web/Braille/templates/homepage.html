@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>점자 이미지 번역기</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    </head>
+    <body>
+        <p class="main_text">점자 이미지 번역기</p>
+        <fieldset>
+            <legend>점자 이미지 업로드</legend>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="img_file" required />
+                <font size="2">노이즈 제거 레벨 :</font>
+                <select name="repeat" id="repeat">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br /><br />
+                <input type="submit" value="번역" />
+            </form>
+        </fieldset>
+    </body>
+</html>
